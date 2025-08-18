@@ -66,8 +66,8 @@ app.post('/scan', async (req, res, next) => {
       let mailTransporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
-          user: 'mohtashamahmed2005@gmail.com',
-          pass: 'lraevvflnletmdmb',
+          user: process.env.EMAIL_USER,
+          pass: process.env.EMAIL_PASS,
         },
       })
       let details = {
