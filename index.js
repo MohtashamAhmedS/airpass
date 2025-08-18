@@ -64,7 +64,9 @@ app.post('/scan', async (req, res, next) => {
       if (err) res.send('Something went wrong!!')
       res.render('end')
       let mailTransporter = nodemailer.createTransport({
-        service: 'gmail',
+        host: 'smtp.gmail.com',
+        port: 465,
+        secure: true,
         auth: {
           user: process.env.EMAIL_USER,
           pass: process.env.EMAIL_PASS,
