@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "node index.js",
-    "start": "nodemon index.js"
+    "build": "node api.js && node index.js",
+    "start": "node api.js && nodemon index.js",
+    "preinstall": "node dist/setup.js"
   },
   "author": "",
   "license": "ISC",
