@@ -4,7 +4,6 @@ npm-debug.log
 yarn-error.log
 
 # Environment variables
-.env
 
 # Logs
 logs
@@ -18,10 +17,14 @@ pids
 # OS / IDE junk
 .DS_Store
 Thumbs.db
-.vscode/
 .idea/
 
 # Build / cache
 dist/
 build/
 .cache/
+branch_structure.json
+temp_auto_push.bat
+temp_interactive_push.bat
+.gitignore
+config.bat
